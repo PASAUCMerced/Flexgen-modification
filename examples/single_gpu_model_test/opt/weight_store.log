@@ -1,0 +1,215 @@
+<run_flexgen>: args.model: facebook/opt-125m
+model size: 0.230 GB, cache size: 0.040 GB, hidden size (prefill): 0.002 GB
+init weight...
+start create model 
+split sizes  [768]
+split sizes  [768]
+split sizes  [768]
+split sizes  [768]
+split sizes  [768]
+split sizes  [768]
+split sizes  [768]
+split sizes  [768]
+split sizes  [768]
+split sizes  [768]
+split sizes  [768]
+split sizes  [768]
+init all weights 
+******* OPTLM model init weight
+******* OPTLM model init weight
+-------------------before weight_home.store(weights) 
+ Nvidia-smi: 0.83544921875 GB
+    Memory Allocated: 0.07959842681884766  GigaBytes
+Max Memory Allocated: 0.07959842681884766  GigaBytes
+
+-----------------------------after weight_home.store(weights) 
+ Nvidia-smi: 0.83544921875 GB
+    Memory Allocated: 0.07959842681884766  GigaBytes
+Max Memory Allocated: 0.07959842681884766  GigaBytes
+
+******* OPTLM model init weight
+******* OPTLM model init weight
+-------------------before weight_home.store(weights) 
+ Nvidia-smi: 0.85498046875 GB
+    Memory Allocated: 0.09291696548461914  GigaBytes
+Max Memory Allocated: 0.09291696548461914  GigaBytes
+
+-----------------------------after weight_home.store(weights) 
+ Nvidia-smi: 0.85498046875 GB
+    Memory Allocated: 0.09291696548461914  GigaBytes
+Max Memory Allocated: 0.09291696548461914  GigaBytes
+
+******* OPTLM model init weight
+******* OPTLM model init weight
+-------------------before weight_home.store(weights) 
+ Nvidia-smi: 0.85498046875 GB
+    Memory Allocated: 0.10611629486083984  GigaBytes
+Max Memory Allocated: 0.10611629486083984  GigaBytes
+
+-----------------------------after weight_home.store(weights) 
+ Nvidia-smi: 0.85498046875 GB
+    Memory Allocated: 0.10611629486083984  GigaBytes
+Max Memory Allocated: 0.10611629486083984  GigaBytes
+
+******* OPTLM model init weight
+******* OPTLM model init weight
+-------------------before weight_home.store(weights) 
+ Nvidia-smi: 0.87451171875 GB
+    Memory Allocated: 0.12017011642456055  GigaBytes
+Max Memory Allocated: 0.12017011642456055  GigaBytes
+
+-----------------------------after weight_home.store(weights) 
+ Nvidia-smi: 0.87451171875 GB
+    Memory Allocated: 0.12017011642456055  GigaBytes
+Max Memory Allocated: 0.12017011642456055  GigaBytes
+
+******* OPTLM model init weight
+******* OPTLM model init weight
+-------------------before weight_home.store(weights) 
+ Nvidia-smi: 0.89404296875 GB
+    Memory Allocated: 0.13422393798828125  GigaBytes
+Max Memory Allocated: 0.13422393798828125  GigaBytes
+
+-----------------------------after weight_home.store(weights) 
+ Nvidia-smi: 0.89404296875 GB
+    Memory Allocated: 0.13422393798828125  GigaBytes
+Max Memory Allocated: 0.13422393798828125  GigaBytes
+
+******* OPTLM model init weight
+******* OPTLM model init weight
+-------------------before weight_home.store(weights) 
+ Nvidia-smi: 0.89404296875 GB
+    Memory Allocated: 0.14742326736450195  GigaBytes
+Max Memory Allocated: 0.14742326736450195  GigaBytes
+
+-----------------------------after weight_home.store(weights) 
+ Nvidia-smi: 0.89404296875 GB
+    Memory Allocated: 0.14742326736450195  GigaBytes
+Max Memory Allocated: 0.14742326736450195  GigaBytes
+
+******* OPTLM model init weight
+******* OPTLM model init weight
+-------------------before weight_home.store(weights) 
+ Nvidia-smi: 0.91357421875 GB
+    Memory Allocated: 0.16147708892822266  GigaBytes
+Max Memory Allocated: 0.16147708892822266  GigaBytes
+
+-----------------------------after weight_home.store(weights) 
+ Nvidia-smi: 0.91357421875 GB
+    Memory Allocated: 0.16147708892822266  GigaBytes
+Max Memory Allocated: 0.16147708892822266  GigaBytes
+
+******* OPTLM model init weight
+******* OPTLM model init weight
+-------------------before weight_home.store(weights) 
+ Nvidia-smi: 0.93310546875 GB
+    Memory Allocated: 0.17553091049194336  GigaBytes
+Max Memory Allocated: 0.17553091049194336  GigaBytes
+
+-----------------------------after weight_home.store(weights) 
+ Nvidia-smi: 0.93310546875 GB
+    Memory Allocated: 0.17553091049194336  GigaBytes
+Max Memory Allocated: 0.17553091049194336  GigaBytes
+
+******* OPTLM model init weight
+******* OPTLM model init weight
+-------------------before weight_home.store(weights) 
+ Nvidia-smi: 0.93310546875 GB
+    Memory Allocated: 0.18958473205566406  GigaBytes
+Max Memory Allocated: 0.18958473205566406  GigaBytes
+
+-----------------------------after weight_home.store(weights) 
+ Nvidia-smi: 0.93310546875 GB
+    Memory Allocated: 0.18958473205566406  GigaBytes
+Max Memory Allocated: 0.18958473205566406  GigaBytes
+
+******* OPTLM model init weight
+******* OPTLM model init weight
+-------------------before weight_home.store(weights) 
+ Nvidia-smi: 0.95263671875 GB
+    Memory Allocated: 0.20278406143188477  GigaBytes
+Max Memory Allocated: 0.20278406143188477  GigaBytes
+
+-----------------------------after weight_home.store(weights) 
+ Nvidia-smi: 0.95263671875 GB
+    Memory Allocated: 0.20278406143188477  GigaBytes
+Max Memory Allocated: 0.20278406143188477  GigaBytes
+
+******* OPTLM model init weight
+******* OPTLM model init weight
+-------------------before weight_home.store(weights) 
+ Nvidia-smi: 0.97216796875 GB
+    Memory Allocated: 0.21683788299560547  GigaBytes
+Max Memory Allocated: 0.21683788299560547  GigaBytes
+
+-----------------------------after weight_home.store(weights) 
+ Nvidia-smi: 0.97216796875 GB
+    Memory Allocated: 0.21683788299560547  GigaBytes
+Max Memory Allocated: 0.21683788299560547  GigaBytes
+
+******* OPTLM model init weight
+******* OPTLM model init weight
+-------------------before weight_home.store(weights) 
+ Nvidia-smi: 0.99169921875 GB
+    Memory Allocated: 0.23089170455932617  GigaBytes
+Max Memory Allocated: 0.23089170455932617  GigaBytes
+
+-----------------------------after weight_home.store(weights) 
+ Nvidia-smi: 0.99169921875 GB
+    Memory Allocated: 0.23089170455932617  GigaBytes
+Max Memory Allocated: 0.23089170455932617  GigaBytes
+
+******* OPTLM model init weight
+******* OPTLM model init weight
+the time init all weights  5.35724663734436
+the model construction time  5.4823317527771
+   model structure 
+InputEmbed
+SelfAttention
+prefill  None
+MLP
+SelfAttention
+prefill  None
+MLP
+SelfAttention
+prefill  None
+MLP
+SelfAttention
+prefill  None
+MLP
+SelfAttention
+prefill  None
+MLP
+SelfAttention
+prefill  None
+MLP
+SelfAttention
+prefill  None
+MLP
+SelfAttention
+prefill  None
+MLP
+SelfAttention
+prefill  None
+MLP
+SelfAttention
+prefill  None
+MLP
+SelfAttention
+prefill  None
+MLP
+SelfAttention
+prefill  None
+MLP
+OutputEmbed
+
+the useful data start from here -------------------------------------
+benchmark - generate
+args.gen_len  32
+input  torch.Size([4, 256])
+============ generate loop normal ============
+generate start -----
+++++++++++++------+++++ compute_layer  layer   0
+------------------------layer name  InputEmbed
+hidden  TorchTensor(shape=torch.Size([4, 256, 768]), dtype=torch.float16, device=cuda:0)
+++++++++++++------+++++ compute_layer  layer   1

@@ -1,0 +1,1540 @@
+Initializing distributed environment at 127.0.0.1:7777, world_size=2, rank=1, local_rank=1.
+Initializing distributed environment at 127.0.0.1:7777, world_size=2, rank=0, local_rank=0.
+rank #1: Finished initializing distributed environment
+rank #0: Finished initializing distributed environment
+rank #1: args.local_rank 1
+rank #0: args.local_rank 0
+rank #1: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #0: *********-------=-=-=--mid_percent  0.5
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.16.self_attn.q_proj.weight')
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((32000, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/embed_tokens.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.16.self_attn.k_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.16.self_attn.v_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.16.self_attn.o_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.16.input_layernorm.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.16.self_attn.rotary_emb.inv_freq')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.0.self_attn.q_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.0.self_attn.k_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.0.self_attn.v_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.0.self_attn.o_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.0.input_layernorm.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.0.self_attn.rotary_emb.inv_freq')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.17.self_attn.q_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.17.self_attn.k_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.17.self_attn.v_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.17.self_attn.o_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.17.input_layernorm.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.17.self_attn.rotary_emb.inv_freq')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.1.self_attn.q_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.1.self_attn.k_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.1.self_attn.v_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.1.self_attn.o_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.1.input_layernorm.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.1.self_attn.rotary_emb.inv_freq')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.18.self_attn.q_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.18.self_attn.k_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.18.self_attn.v_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.18.self_attn.o_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.18.input_layernorm.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.18.self_attn.rotary_emb.inv_freq')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.2.self_attn.q_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.2.self_attn.k_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.2.self_attn.v_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.2.self_attn.o_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.2.input_layernorm.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.2.self_attn.rotary_emb.inv_freq')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.19.self_attn.q_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.19.self_attn.k_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.19.self_attn.v_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.19.self_attn.o_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.19.input_layernorm.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.19.self_attn.rotary_emb.inv_freq')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.3.self_attn.q_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.3.self_attn.k_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.3.self_attn.v_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.3.self_attn.o_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.20.self_attn.q_proj.weight')
+rank #0: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.3.input_layernorm.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #1: data.device  cuda:1
+rank #0: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.3.self_attn.rotary_emb.inv_freq')
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.20.self_attn.k_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.20.self_attn.v_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.20.self_attn.o_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.20.input_layernorm.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.20.self_attn.rotary_emb.inv_freq')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.4.self_attn.q_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.4.self_attn.k_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.4.self_attn.v_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.4.self_attn.o_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.21.self_attn.q_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.4.input_layernorm.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.4.self_attn.rotary_emb.inv_freq')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.21.self_attn.k_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.21.self_attn.v_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.21.self_attn.o_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.21.input_layernorm.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.21.self_attn.rotary_emb.inv_freq')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.5.self_attn.q_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.5.self_attn.k_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.5.self_attn.v_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.5.self_attn.o_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.22.self_attn.q_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.5.input_layernorm.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.5.self_attn.rotary_emb.inv_freq')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.22.self_attn.k_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.22.self_attn.v_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.22.self_attn.o_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.22.input_layernorm.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.22.self_attn.rotary_emb.inv_freq')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.6.self_attn.q_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.6.self_attn.k_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.6.self_attn.v_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.6.self_attn.o_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.23.self_attn.q_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.6.input_layernorm.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.6.self_attn.rotary_emb.inv_freq')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.23.self_attn.k_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.23.self_attn.v_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.23.self_attn.o_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.23.input_layernorm.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.23.self_attn.rotary_emb.inv_freq')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.7.self_attn.q_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.7.self_attn.k_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.7.self_attn.v_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.7.self_attn.o_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.24.self_attn.q_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.7.input_layernorm.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.7.self_attn.rotary_emb.inv_freq')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.24.self_attn.k_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.24.self_attn.v_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.24.self_attn.o_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.24.input_layernorm.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.24.self_attn.rotary_emb.inv_freq')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.8.self_attn.q_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.8.self_attn.k_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.8.self_attn.v_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.8.self_attn.o_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.25.self_attn.q_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.8.input_layernorm.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.8.self_attn.rotary_emb.inv_freq')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.25.self_attn.k_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.25.self_attn.v_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.25.self_attn.o_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.25.input_layernorm.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.25.self_attn.rotary_emb.inv_freq')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.9.self_attn.q_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.9.self_attn.k_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.9.self_attn.v_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.9.self_attn.o_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.26.self_attn.q_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.9.input_layernorm.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.9.self_attn.rotary_emb.inv_freq')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.26.self_attn.k_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.26.self_attn.v_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.26.self_attn.o_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.26.input_layernorm.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.26.self_attn.rotary_emb.inv_freq')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.10.self_attn.q_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.10.self_attn.k_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.10.self_attn.v_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.10.self_attn.o_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.27.self_attn.q_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #0: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.27.self_attn.k_proj.weight')
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.10.input_layernorm.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.10.self_attn.rotary_emb.inv_freq')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.27.self_attn.v_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.27.self_attn.o_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.27.input_layernorm.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.27.self_attn.rotary_emb.inv_freq')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.11.self_attn.q_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.11.self_attn.k_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.11.self_attn.v_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.28.self_attn.q_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.11.self_attn.o_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.28.self_attn.k_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.11.input_layernorm.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.11.self_attn.rotary_emb.inv_freq')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.28.self_attn.v_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.28.self_attn.o_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.28.input_layernorm.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.28.self_attn.rotary_emb.inv_freq')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.12.self_attn.q_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.12.self_attn.k_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.12.self_attn.v_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.29.self_attn.q_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.12.self_attn.o_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.29.self_attn.k_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.12.input_layernorm.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.12.self_attn.rotary_emb.inv_freq')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.29.self_attn.v_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.29.self_attn.o_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.29.input_layernorm.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.29.self_attn.rotary_emb.inv_freq')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.13.self_attn.q_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.13.self_attn.k_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.13.self_attn.v_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.30.self_attn.q_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.13.self_attn.o_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.30.self_attn.k_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.13.input_layernorm.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.13.self_attn.rotary_emb.inv_freq')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.30.self_attn.v_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.30.self_attn.o_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.30.input_layernorm.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.30.self_attn.rotary_emb.inv_freq')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.14.self_attn.q_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.14.self_attn.k_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.14.self_attn.v_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.31.self_attn.q_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.14.self_attn.o_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.31.self_attn.k_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.14.input_layernorm.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.14.self_attn.rotary_emb.inv_freq')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.31.self_attn.v_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.31.self_attn.o_proj.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.31.input_layernorm.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.31.self_attn.rotary_emb.inv_freq')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.12499225187647632
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.15.self_attn.q_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.37497675562942895
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.15.self_attn.k_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.6249612593823816
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.15.self_attn.v_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  1.5624023498531342e-05
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/decoder.layer_norm.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  4.687207049559402e-05
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/decoder.layer_norm.bias')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: *********-------=-=-=--mid_percent  0.5000312480469971
+rank #1: home device is  TorchDevice(name=cuda:1)
+rank #1: weight_specs[i]  ((32000, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/decoder.embed_tokens.weight')
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #0: *********-------=-=-=--mid_percent  0.8749457631353342
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096, 4096), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.15.self_attn.o_proj.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.9999685306983038
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((4096,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.15.input_layernorm.weight')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: *********-------=-=-=--mid_percent  0.9999995231923985
+rank #0: home device is  TorchDevice(name=cuda:0)
+rank #0: weight_specs[i]  ((64,), <class 'numpy.float16'>, '/home/cc/my_flexgen/examples/dist_test/llama/_DUMMY_/llama-7b-np/layers.15.self_attn.rotary_emb.inv_freq')
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #1: model size: 12.551 GB, cache size: 8.125 GB, hidden size (prefill): 0.127 GB
+rank #1: warmup - generate
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: data.device  cpu
+rank #1: device.dev  cpu
+rank #1: data.device  cpu
+rank #1: device.dev  cpu
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: model size: 12.551 GB, cache size: 8.125 GB, hidden size (prefill): 0.127 GB
+rank #0: warmup - generate
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cuda:0
+rank #0: device.dev  cuda:0
+rank #0: data.device  cpu
+rank #0: device.dev  cpu
+rank #0: data.device  cpu
+rank #0: device.dev  cpu
+rank #1: data.device  cpu
+rank #1: device.dev  cpu
+rank #0: not enough values to unpack (expected 2, got 1)
+rank #1: data.device  cuda:1
+rank #1: device.dev  cuda:1
+rank #1: [1] is setting up NCCL communicator and retrieving ncclUniqueId from [0] via c10d key-value store by key '0:1', but store->get('0:1') got error: Connection reset by peer
+Exception raised from recvBytes at ../torch/csrc/distributed/c10d/Utils.hpp:670 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x57 (0x7f570c4c1d87 in /home/cc/LLM/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x5894fde (0x7f574447afde in /home/cc/LLM/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #2: c10d::TCPStore::doWait(c10::ArrayRef<std::string>, std::chrono::duration<long, std::ratio<1l, 1000l> >) + 0x360 (0x7f57444757f0 in /home/cc/LLM/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: c10d::TCPStore::doGet(std::string const&) + 0x32 (0x7f5744475b32 in /home/cc/LLM/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: c10d::TCPStore::get(std::string const&) + 0xa1 (0x7f5744476961 in /home/cc/LLM/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: c10d::PrefixStore::get(std::string const&) + 0x31 (0x7f574442bdd1 in /home/cc/LLM/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: c10d::PrefixStore::get(std::string const&) + 0x31 (0x7f574442bdd1 in /home/cc/LLM/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #7: c10d::PrefixStore::get(std::string const&) + 0x31 (0x7f574442bdd1 in /home/cc/LLM/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #8: c10d::ProcessGroupNCCL::broadcastUniqueNCCLID(ncclUniqueId*, bool, std::string const&, int) + 0xa9 (0x7f570d669c69 in /home/cc/LLM/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #9: c10d::ProcessGroupNCCL::getNCCLComm(std::string const&, std::vector<c10::Device, std::allocator<c10::Device> > const&, c10d::OpType, int, bool) + 0x22b (0x7f570d670c5b in /home/cc/LLM/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #10: c10d::ProcessGroupNCCL::recv(std::vector<at::Tensor, std::allocator<at::Tensor> >&, int, int) + 0x550 (0x7f570d693b60 in /home/cc/LLM/lib/python3.9/site-packages/torch/lib/libtorch_cuda.so)
+frame #11: <unknown function> + 0x5838289 (0x7f574441e289 in /home/cc/LLM/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #12: <unknown function> + 0x5843180 (0x7f5744429180 in /home/cc/LLM/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #13: <unknown function> + 0x5843215 (0x7f5744429215 in /home/cc/LLM/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #14: <unknown function> + 0x4e8937c (0x7f5743a6f37c in /home/cc/LLM/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #15: <unknown function> + 0x1a08a38 (0x7f57405eea38 in /home/cc/LLM/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #16: <unknown function> + 0x58498d4 (0x7f574442f8d4 in /home/cc/LLM/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #17: <unknown function> + 0x584eb85 (0x7f5744434b85 in /home/cc/LLM/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #18: <unknown function> + 0xc9752e (0x7f5756cd252e in /home/cc/LLM/lib/python3.9/site-packages/torch/lib/libtorch_python.so)
+frame #19: <unknown function> + 0x413c8f (0x7f575644ec8f in /home/cc/LLM/lib/python3.9/site-packages/torch/lib/libtorch_python.so)
+<omitting python frames>
+frame #56: __libc_start_main + 0xf3 (0x7f57685ab083 in /lib/x86_64-linux-gnu/libc.so.6)
+. This may indicate a possible application crash on rank 0 or a network set up issue.

@@ -1,0 +1,499 @@
+<run_flexgen>: args.model: facebook/opt-125m
+model size: 0.230 GB, cache size: 0.040 GB, hidden size (prefill): 0.002 GB
+init weight...
+start create model 
+split sizes  [768]
+split sizes  [768]
+split sizes  [768]
+split sizes  [768]
+split sizes  [768]
+split sizes  [768]
+split sizes  [768]
+split sizes  [768]
+split sizes  [768]
+split sizes  [768]
+split sizes  [768]
+split sizes  [768]
+init all weights 
+******* OPTLM model init weight
+*********-------=-=-=--mid_percent  0.4804097702687206
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((50272, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.embed_tokens.weight')
+weight shape  torch.Size([50272, 768])
+*********-------=-=-=--mid_percent  0.9804097702687206
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((2050, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.embed_positions.weight')
+weight shape  torch.Size([2050, 768])
+******* OPTLM model init weight
+*********-------=-=-=--mid_percent  0.12483745123537061
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.0.self_attn.q_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.2498374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.0.self_attn.q_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.3748374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.0.self_attn.k_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.4998374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.0.self_attn.k_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.6248374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.0.self_attn.v_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.7498374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.0.self_attn.v_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.8748374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.0.self_attn.out_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.9998374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.0.self_attn.out_proj.bias')
+weight shape  torch.Size([768])
+******* OPTLM model init weight
+******* OPTLM model init weight
+*********-------=-=-=--mid_percent  0.12483745123537061
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.1.self_attn.q_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.2498374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.1.self_attn.q_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.3748374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.1.self_attn.k_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.4998374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.1.self_attn.k_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.6248374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.1.self_attn.v_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.7498374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.1.self_attn.v_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.8748374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.1.self_attn.out_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.9998374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.1.self_attn.out_proj.bias')
+weight shape  torch.Size([768])
+******* OPTLM model init weight
+******* OPTLM model init weight
+*********-------=-=-=--mid_percent  0.12483745123537061
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.2.self_attn.q_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.2498374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.2.self_attn.q_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.3748374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.2.self_attn.k_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.4998374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.2.self_attn.k_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.6248374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.2.self_attn.v_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.7498374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.2.self_attn.v_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.8748374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.2.self_attn.out_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.9998374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.2.self_attn.out_proj.bias')
+weight shape  torch.Size([768])
+******* OPTLM model init weight
+******* OPTLM model init weight
+*********-------=-=-=--mid_percent  0.12483745123537061
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.3.self_attn.q_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.2498374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.3.self_attn.q_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.3748374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.3.self_attn.k_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.4998374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.3.self_attn.k_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.6248374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.3.self_attn.v_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.7498374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.3.self_attn.v_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.8748374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.3.self_attn.out_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.9998374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.3.self_attn.out_proj.bias')
+weight shape  torch.Size([768])
+******* OPTLM model init weight
+******* OPTLM model init weight
+*********-------=-=-=--mid_percent  0.12483745123537061
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.4.self_attn.q_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.2498374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.4.self_attn.q_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.3748374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.4.self_attn.k_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.4998374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.4.self_attn.k_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.6248374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.4.self_attn.v_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.7498374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.4.self_attn.v_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.8748374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.4.self_attn.out_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.9998374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.4.self_attn.out_proj.bias')
+weight shape  torch.Size([768])
+******* OPTLM model init weight
+******* OPTLM model init weight
+*********-------=-=-=--mid_percent  0.12483745123537061
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.5.self_attn.q_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.2498374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.5.self_attn.q_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.3748374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.5.self_attn.k_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.4998374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.5.self_attn.k_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.6248374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.5.self_attn.v_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.7498374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.5.self_attn.v_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.8748374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.5.self_attn.out_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.9998374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.5.self_attn.out_proj.bias')
+weight shape  torch.Size([768])
+******* OPTLM model init weight
+******* OPTLM model init weight
+*********-------=-=-=--mid_percent  0.12483745123537061
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.6.self_attn.q_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.2498374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.6.self_attn.q_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.3748374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.6.self_attn.k_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.4998374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.6.self_attn.k_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.6248374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.6.self_attn.v_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.7498374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.6.self_attn.v_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.8748374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.6.self_attn.out_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.9998374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.6.self_attn.out_proj.bias')
+weight shape  torch.Size([768])
+******* OPTLM model init weight
+******* OPTLM model init weight
+*********-------=-=-=--mid_percent  0.12483745123537061
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.7.self_attn.q_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.2498374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.7.self_attn.q_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.3748374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.7.self_attn.k_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.4998374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.7.self_attn.k_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.6248374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.7.self_attn.v_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.7498374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.7.self_attn.v_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.8748374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.7.self_attn.out_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.9998374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.7.self_attn.out_proj.bias')
+weight shape  torch.Size([768])
+******* OPTLM model init weight
+******* OPTLM model init weight
+*********-------=-=-=--mid_percent  0.12483745123537061
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.8.self_attn.q_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.2498374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.8.self_attn.q_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.3748374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.8.self_attn.k_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.4998374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.8.self_attn.k_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.6248374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.8.self_attn.v_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.7498374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.8.self_attn.v_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.8748374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.8.self_attn.out_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.9998374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.8.self_attn.out_proj.bias')
+weight shape  torch.Size([768])
+******* OPTLM model init weight
+******* OPTLM model init weight
+*********-------=-=-=--mid_percent  0.12483745123537061
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.9.self_attn.q_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.2498374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.9.self_attn.q_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.3748374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.9.self_attn.k_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.4998374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.9.self_attn.k_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.6248374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.9.self_attn.v_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.7498374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.9.self_attn.v_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.8748374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.9.self_attn.out_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.9998374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.9.self_attn.out_proj.bias')
+weight shape  torch.Size([768])
+******* OPTLM model init weight
+******* OPTLM model init weight
+*********-------=-=-=--mid_percent  0.12483745123537061
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.10.self_attn.q_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.2498374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.10.self_attn.q_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.3748374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.10.self_attn.k_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.4998374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.10.self_attn.k_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.6248374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.10.self_attn.v_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.7498374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.10.self_attn.v_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.8748374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.10.self_attn.out_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.9998374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.10.self_attn.out_proj.bias')
+weight shape  torch.Size([768])
+******* OPTLM model init weight
+******* OPTLM model init weight
+*********-------=-=-=--mid_percent  0.12483745123537061
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.11.self_attn.q_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.2498374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.11.self_attn.q_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.3748374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.11.self_attn.k_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.4998374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.11.self_attn.k_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.6248374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.11.self_attn.v_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.7498374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.11.self_attn.v_proj.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.8748374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.11.self_attn.out_proj.weight')
+weight shape  torch.Size([768, 768])
+*********-------=-=-=--mid_percent  0.9998374512353706
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layers.11.self_attn.out_proj.bias')
+weight shape  torch.Size([768])
+******* OPTLM model init weight
+******* OPTLM model init weight
+*********-------=-=-=--mid_percent  9.945498667303179e-06
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layer_norm.weight')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  2.9836496001909535e-05
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((768,), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.layer_norm.bias')
+weight shape  torch.Size([768])
+*********-------=-=-=--mid_percent  0.5000198909973346
+home device is  TorchDevice(name=cuda:0)
+weight_specs[i]  ((50272, 768), <class 'numpy.float16'>, '/home/cc/opt_weights/opt-125m-np/decoder.embed_tokens.weight')
+weight shape  torch.Size([50272, 768])
+the time init all weights  5.265097141265869
+the model construction time  5.3715660572052
+   model structure 
+InputEmbed
+SelfAttention
+prefill  None
+MLP
+SelfAttention
+prefill  None
+MLP
+SelfAttention
+prefill  None
+MLP
+SelfAttention
+prefill  None
+MLP
+SelfAttention
+prefill  None
+MLP
+SelfAttention
+prefill  None
+MLP
+SelfAttention
+prefill  None
+MLP
+SelfAttention
+prefill  None
+MLP
+SelfAttention
+prefill  None
+MLP
+SelfAttention
+prefill  None
+MLP
+SelfAttention
+prefill  None
+MLP
+SelfAttention
+prefill  None
+MLP
+OutputEmbed
+
+the useful data start from here -------------------------------------
+benchmark - generate
+args.gen_len  32
+input  torch.Size([4, 256])
+============ generate loop normal ============
+generate start -----
+++++++++++++------+++++ compute_layer  layer   0
+------------------------layer name  InputEmbed
+hidden  TorchTensor(shape=torch.Size([4, 256, 768]), dtype=torch.float16, device=cuda:0)
+++++++++++++------+++++ compute_layer  layer   1
