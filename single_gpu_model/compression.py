@@ -3,9 +3,9 @@ import dataclasses
 import torch
 import numpy as np
 
-from flexgen.pytorch_backend import (TorchTensor, TorchDevice,
+from pytorch_backend import (TorchTensor, TorchDevice,
     DeviceType, general_copy, fix_recursive_import)
-from flexgen.utils import np_dtype_to_torch_dtype
+from flexgen_utils import np_dtype_to_torch_dtype
 
 
 @dataclasses.dataclass

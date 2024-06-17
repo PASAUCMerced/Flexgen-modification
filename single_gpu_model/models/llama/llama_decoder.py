@@ -1,12 +1,16 @@
+import sys
+sys.path.insert(0,'/home/cc/my_flexgen/single_gpu_model')
+from flexgen_utils import ExecutionEnv, init_weight_list, ValueHolder
+from policy import Policy
+from pytorch_backend import general_copy, DeviceType
 
 from llama_config import LlamaConfig
 from llama_attention import LlamaAttention
 from llama_mlp import LlamaMLP
-import sys
-sys.path.insert(0,'/home/cc/my_flexgen/flexgen_offload')
 
-from flexgen_utils import ExecutionEnv, ValueHolder
-from policy import Policy
+
+
+
 
 
 class LlamaDecoderLayer:

@@ -1,8 +1,11 @@
 import os
 import numpy as np 
 import sys
-sys.path.insert(0,'/home/cc/FlexGen/new_flexgen/flexgen_offload')
+sys.path.insert(0,'../')
+sys.path.insert(0,'/home/cc/my_flexgen/single_gpu_model')
+from flexgen_utils import init_weight_list
 from flexgen_utils import torch_dtype_to_np_dtype
+
 DUMMY_WEIGHT = "_DUMMY_"  # Use dummy weights for benchmark purposes
 
 def get_choice(cur_percent, percents, choices):

@@ -38,7 +38,7 @@ from enums import AttnMaskType, ModelType, LayerType, AttnType, PositionEmbeddin
 from fused_layer_norm import FusedLayerNorm
 from fused_softmax import FusedScaleMaskSoftmax
 from fused_bias_gelu import bias_gelu_impl
-from my_utils import attention_mask_func, openai_gelu, erf_gelu, get_linear_layer
+from my_flexgen.single_gpu_model.models.opt.my_utils import attention_mask_func, openai_gelu, erf_gelu, get_linear_layer
 
 
 from glu_activations import GLU_ACTIVATIONS

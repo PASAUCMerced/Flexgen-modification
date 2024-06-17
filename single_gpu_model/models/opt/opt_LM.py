@@ -1,8 +1,8 @@
 from self_attention_layer import SelfAttention
-from MLP_layer import MLP
+from my_flexgen.single_gpu_model.layers.opt_mlp import MLP
 from transformer_layer import TransformerLayer
-from input_layer import InputEmbed
-from output_layer import OutputEmbed
+from my_flexgen.single_gpu_model.layers.opt_input import InputEmbed
+from my_flexgen.single_gpu_model.layers.opt_ouput import OutputEmbed
 
 from typing import Union, List, Optional
 import time

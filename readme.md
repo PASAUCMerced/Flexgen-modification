@@ -16,12 +16,19 @@
 |       |- models/layers (opt, llama)
 |
 | - single_gpu_model -
-|   |- models/layers (opt, llama)
+|   |- models/
+|       |- llama/layers (pass)
+|       |- opt/layers
 |
 | - examples
 |   |- decentralized_model_scripts (configs)
 |   |- dist_model_scripts
 |   |- single_gpu_model_scripts
+|       |- models
+|           |- llama
+|           |   |- flex_llama.py (pass)
+|           |- opt
+|               |- flex_opt.py (todo)
 |
 | - utils
 |

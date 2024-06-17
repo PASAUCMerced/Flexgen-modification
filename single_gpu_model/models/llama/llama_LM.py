@@ -1,23 +1,28 @@
 import torch
 import numpy as np
-import sys
-sys.path.insert(0,'/home/cc/my_flexgen/flexgen_offload')
-from data_types import array_1d, array_2d, array_3d
-from task import Task
-from llama_config import LlamaConfig, get_llama_config, download_llama_weights
-from flexgen_utils import ExecutionEnv, ValueHolder
-from policy import Policy
-sys.path.insert(0,'/home/cc/my_flexgen/utils')  
-from timers import timers
-
-from input_layer import InputEmbed
+from llama_input import InputEmbed
 from llama_attention import LlamaAttention
 from llama_mlp import LlamaMLP
 from llama_decoder import LlamaDecoderLayer
-from output_layer import OutputEmbed
+from llama_output import OutputEmbed
+
+import sys
+sys.path.insert(0,'/home/cc/my_flexgen/single_gpu_model')
+from flexgen_utils import ExecutionEnv, init_weight_list, array_1d, array_2d,array_3d, Task
+from policy import Policy
+from pytorch_backend import general_copy, DeviceType
+
+from llama_config import LlamaConfig, get_llama_config, download_llama_weights
+from flexgen_utils import ExecutionEnv, ValueHolder
+
+sys.path.insert(0,'/home/cc/my_flexgen/utils')  
+from timers import timers
+
+
 import os
 from typing import Union, List, Optional
 import tqdm
+
 DUMMY_WEIGHT = "_DUMMY_"  # Use dummy weights for benchmark purposes
 
 

@@ -1,9 +1,14 @@
 import os
 import sys
-sys.path.insert(0,'/home/cc/FlexGen/new_flexgen/flexgen_offload')
+sys.path.insert(0,'/home/cc/my_flexgen/single_gpu_model')
 from flexgen_utils import ExecutionEnv, init_weight_list
-from llama_config import LlamaConfig
 from policy import Policy
+from pytorch_backend import general_copy, DeviceType
+
+# sys.path.insert(0,'/home/cc/my_flexgen/examples/single_gpu_model_test/llama')
+from llama_config import LlamaConfig
+
+
 class LlamaAttention:
     """Multi-headed attention from 'Attention Is All You Need' paper"""
 
