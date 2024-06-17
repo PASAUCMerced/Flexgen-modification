@@ -1,5 +1,5 @@
-from my_flexgen.single_gpu_model.layers.opt_attention import SelfAttention
-from my_flexgen.single_gpu_model.layers.opt_mlp import MLP
+from opt_attention import SelfAttention
+from opt_mlp import MLP
 from flexgen_utils import  ValueHolder
    
 

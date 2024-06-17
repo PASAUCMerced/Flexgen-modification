@@ -3,7 +3,6 @@ from opt_mlp import MLP
 from opt_transformer_layer import TransformerLayer
 from opt_input import InputEmbed
 from opt_ouput import OutputEmbed
-from opt_layernorm import Layer_norm
 
 from typing import Union, List, Optional
 import time
@@ -37,12 +36,13 @@ class OptLM:
         self.path = path
         self.policy = policy
         self.num_gpu_batches = policy.num_gpu_batches
+        self.name = "OptLM"
+        
 
         layers = []
         layers.append(InputEmbed(self.config, self.env, self.policy))
         for i in range(self.config.num_hidden_layers):
             if policy.sep_layer:
-                layers.append(Layer_norm(self.config, self.env, self.policy, i))
                 layers.append(SelfAttention(self.config, self.env, self.policy, i))
                 layers.append(MLP(self.config, self.env, self.policy, i))
             else:
@@ -80,7 +80,10 @@ class OptLM:
         self.attention_mask = array_1d(num_gpu_batches, ValueHolder)
 
         self.task = None
+        print('init all weights ')
+        time_int = time.time()
         self.init_all_weights()
+        print('the time init all weights ',time.time()-time_int )
 
     def set_task(self, task):
         self.task = task
@@ -91,7 +94,9 @@ class OptLM:
         expanded_path = os.path.abspath(os.path.expanduser(
             os.path.join(self.path, f"{self.config.name}-np")))
         check_path = os.path.join(expanded_path, "decoder.embed_positions.weight")
+        print('******* OPTLM model init weight')
         if not os.path.exists(check_path) and DUMMY_WEIGHT not in check_path:
+            print(' download opt weights from hugging face---------')
             download_opt_weights(self.config.name, self.path)
 
         self.layers[j].init_weight(self.weight_home[j], expanded_path)
@@ -122,9 +127,6 @@ class OptLM:
 
     def init_cache(self, j, k):
         self.layers[j].init_cache_one_gpu_batch(self.cache_home[j][k])
-
-    
-
 
     def load_cache(self, i, j, k, overlap=True):
         # Handle corner cases
@@ -167,7 +169,15 @@ class OptLM:
                 self.layers[j].store_cache(self.cache_home[j][k], self.cache_write_buf[j][k], i)
         else:
             self.layers[j].store_cache(self.cache_home[j][k], self.cache_write_buf[j][k], i)
-
+            # 
+            # act_info = self.layers[j].input_act_shape_and_dtype(self.policy.gpu_batch_size, self.seq_len)
+            
+            # act_info = self.layers[j].input_act_shape_and_dtype(self.policy.gpu_batch_size, self.execute_gen_len)
+            # print("activation info")
+            # print(self.layers[j].name)
+            # print(act_info)
+            # print()
+            
     def delete_cache(self, j, k):
         v = self.cache_home[j][k].pop()
         if v:
@@ -235,10 +245,23 @@ class OptLM:
         # Clear the weight_read_buf if it is the last gpu batch
         # Clear the cache_read_buf
         # Run layer computation
-        print('layer name: ', self.layers[j].name)
+        print('++++++++++++------+++++ compute_layer  layer  ', j)
         self.layers[j].forward(self.hidden[i][j][k], self.cache_read_buf[j][k],
             self.weight_read_buf[j], self.attention_mask[k],
             self.cache_write_buf[j][k], i, k)
+        print('------------------------layer name ',self.layers[j].name )
+        print('hidden ', self.hidden[i][j][k].val)
+        # print('cache_read_buf ', self.cache_read_buf[j][k].val)
+        # print('weight_read_buf ', self.weight_read_buf[j].val)
+        # print('attention_mask ', self.attention_mask[k].val)
+        # print('cache_write_buf ', self.cache_write_buf[j][k].val)
+        
+        # if self.cache_write_buf[j][k].val :
+        #     print('cache_write_buf '+ str(self.cache_write_buf[j][k].val[0].data.size()) + ', ' + str(self.cache_write_buf[j][k].val[1].data.size()))
+            
+        # else:
+        #     print('cache_write_buf ', self.cache_write_buf[j][k].val)
+        # print()
 
     def sync(self):
         self.env.disk.synchronize()
@@ -246,7 +269,10 @@ class OptLM:
 
     def init_all_weights(self):
         self.weight_home = array_1d(self.num_layers, ValueHolder)
+        # print("self.num_layers ", self.num_layers)
         for j in range(self.num_layers):
+            if j == 64:
+                print('64 ')
             self.init_weight(j)
 
     def delete_all_weights(self):
@@ -328,9 +354,11 @@ class OptLM:
             self.env.cpu.init_attention_compute_workspace(self.config, self.task, self.policy)
 
         # Generate
+        
         if debug_mode is None:
             if not overlap:
                 # No overlap, easy to understand, suitable for debugging
+                print('============ generate loop normal ============')
                 self.generation_loop_normal()
             else:
                 # Overlap I/O and compute
@@ -341,8 +369,10 @@ class OptLM:
         elif debug_mode == "fewer_batch":
             # Run fewer layeres and batches for debugging
             if num_gpu_batches == 1:
+                print('============ decode ============')
                 self.generation_loop_debug_single_batch()
             else:
+                print('============ decode ============')
                 self.generation_loop_debug_multi_batch()
         elif debug_mode == "breakdown":
             # No overlap, fewer batches, execution time breakdown
@@ -361,6 +391,9 @@ class OptLM:
 
     def generation_loop_normal(self):
         for i in range(self.execute_gen_len):
+            if i == 0: 
+                print('generate start -----')
+            
             timers("generate").start()
             for k in range(self.num_gpu_batches):
                 self.update_attention_mask(i, k)
@@ -374,7 +407,9 @@ class OptLM:
                     self.compute_layer(i, j, k)
                     self.store_hidden(i, j, k)
                     self.store_cache(i, j, k, overlap=False)
+                    
             timers("generate").stop()
+            print('generate stop *******')
 
     def generation_loop_debug_normal(self):
         execute_num_batches = 20
@@ -407,7 +442,9 @@ class OptLM:
                 self.update_attention_mask(i, k)
 
             for j in range(self.num_layers):
-                if i > 0: timers("decoding_gpu_batch").start()
+                if i > 0: 
+                    print('decoding start')
+                    timers("decoding_gpu_batch").start()
 
                 load_weight_timer.start(self.sync)
                 for k in range(self.num_gpu_batches):
@@ -429,6 +466,7 @@ class OptLM:
 
                 if i > 0:
                     timers("decoding_gpu_batch").stop()
+                    print('decoding stop')
                     pbar.update(1)
                     batch_ct += 1
                 if batch_ct >= execute_num_batches: break
@@ -525,7 +563,10 @@ class OptLM:
             if i == 0: timers("prefill").start()
             self.update_attention_mask(i, 0)
             for j in range(self.num_layers):
-                if i > 0: timers("decoding_gpu_batch").start()
+                if i > 0: 
+                    print('decoding start')
+                    timers("decoding_gpu_batch").start()
+                
                 self.load_weight(i, j+1, 0)
                 self.load_cache(i, j+1, 0)
                 self.load_hidden(i, j, 0)
@@ -536,6 +577,7 @@ class OptLM:
 
                 if i > 0:
                     timers("decoding_gpu_batch").stop()
+                    print('decoding stop')
                     pbar.update(1)
                     batch_ct += 1
                 if batch_ct >= execute_num_batches: break
@@ -565,11 +607,15 @@ class OptLM:
 
         # Generate
         for i in range(self.execute_gen_len):
-            if i == 0: timers("prefill").start()
+            if i == 0: 
+                print('prefill start -----')
+                timers("prefill").start()
             for k in range(self.num_gpu_batches):
                 self.update_attention_mask(i, k)
             for j in range(self.num_layers):
-                if i > 0: timers("decoding_gpu_batch").start()
+                if i > 0: 
+                    print('decoding_gpu_batch start ')
+                    timers("decoding_gpu_batch").start()
                 for k in range(self.num_gpu_batches):
                     self.load_weight(i, j+1, k)
                     self.load_cache(i, j, k+1)
@@ -581,6 +627,7 @@ class OptLM:
 
                 if i > 0:
                     timers("decoding_gpu_batch").stop()
+                    print('decoding stop')
                     pbar.update(1)
                     batch_ct += 1
                 if batch_ct >= execute_num_batches: break

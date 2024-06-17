@@ -17,7 +17,9 @@ class Layer_norm:
         self.compute = self.env.gpu
         self.task = None
      
-        
+    def set_task(self, task):
+        self.task = task
+
     # load weights from files downloaded from pretrained model(Meta)
     def init_weight(self, weight_home, path):
         v, h, s, dtype = (self.config.vocab_size, self.config.input_dim,
@@ -42,8 +44,17 @@ class Layer_norm:
             dst2 = self.compute
             weight_read_buf.store((
                 w_ln.smart_copy(dst2), b_ln.smart_copy(dst2)))
+
+    def init_cache_one_gpu_batch(self, cache_home):
+        pass  # do nothing
+
+    def load_cache(self, cache_home, cache_read_buf, i):
+        pass  # do nothing
+
+    def store_cache(self, cache_home, cache_write_buf, i):
+        pass  # do nothing
     
-    
+    # self, hidden, cache_read_buf, weight_read_buf, attention_mask,cache_write_buf, i, k
     def forward(self, hidden, cache_read_buf, weight_read_buf, cache_write_buf, i, k):
         
         donate = [False] * 4
