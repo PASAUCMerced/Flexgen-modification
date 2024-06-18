@@ -42,7 +42,7 @@ class OptLM:
         layers.append(InputEmbed(self.config, self.env, self.policy))
         for i in range(self.config.num_hidden_layers):
             if policy.sep_layer:
-                layers.append(Layer_norm(self.config, self.env, self.policy, i))
+                # layers.append(Layer_norm(self.config, self.env, self.policy, i))
                 layers.append(SelfAttention(self.config, self.env, self.policy, i))
                 layers.append(MLP(self.config, self.env, self.policy, i))
             else:

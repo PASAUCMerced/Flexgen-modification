@@ -55,7 +55,7 @@ class Layer_norm:
         pass  # do nothing
     
     # self, hidden, cache_read_buf, weight_read_buf, attention_mask,cache_write_buf, i, k
-    def forward(self, hidden, cache_read_buf, weight_read_buf, cache_write_buf, i, k):
+    def forward(self, hidden, cache_read_buf, weight_read_buf, attention_mask,cache_write_buf, i, k):
         
         donate = [False] * 4
         h, donate[0] = hidden.val, True
