@@ -2,31 +2,33 @@
 
 ```plaintext
 |   
-| - decentralized_model -    
-|   | hivemind/
+| - decentralized_model -    (todo)
+|   |- hivemind/
 │       |─ __init__.py
 │       |─ connection_manager.py
 │       |─ peer_discovery.py        # e.g., build connections via IP addresses
 │       |─ utils.py 
-|   
+|   |- cli/
+│       |─ run_dht.py
+|
 |   |- server/
 │       ├── __init__.py
 │       ├── server.py
-│       ├── api/
-│       │   ├── __init__.py
-│       │   ├── endpoints.py
-│       │   └── middleware.py
-│       └── jobs/
-│          ├── __init__.py
-│          ├── job_manager.py
-│          └── client_handler.py
-|   
+│       ├── backend.py
+│       ├── handlers.py
+
+|   |- client/
+│       ├── __init__.py
+│       ├── client.py   # e.g., clientConfig
+│       ├── client_manager.py # e.g., sequence manager
+│       ├── sequential_generation.py 
+
 |   |- pipeline parallelism
 |       |- models/
 |              |- llama/layers (todo)
 |              |- opt/layers (todo)
 |
-| - dist_model
+| - dist_model -    (todo)
 |   |- tensor model parallelism -
 |   |   |- models/
 |   |           |- llama/layers (todo)
