@@ -1,0 +1,2863 @@
+<run_flexgen>: args.model: facebook/opt-125m
+model size: 0.230 GB, cache size: 0.075 GB, hidden size (prefill): 0.003 GB
+init weight...
+warmup - generate
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha----------------------------------------------------------
+b,s,h 4 32 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 32, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha----------------------------------------------------------
+b,s,h 4 32 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 32, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha----------------------------------------------------------
+b,s,h 4 32 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 32, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha----------------------------------------------------------
+b,s,h 4 32 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 32, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha----------------------------------------------------------
+b,s,h 4 32 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 32, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha----------------------------------------------------------
+b,s,h 4 32 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 32, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha----------------------------------------------------------
+b,s,h 4 32 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 32, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha----------------------------------------------------------
+b,s,h 4 32 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 32, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha----------------------------------------------------------
+b,s,h 4 32 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 32, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha----------------------------------------------------------
+b,s,h 4 32 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 32, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha----------------------------------------------------------
+b,s,h 4 32 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 32, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha----------------------------------------------------------
+b,s,h 4 32 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 32, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+benchmark - generate
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha----------------------------------------------------------
+b,s,h 4 512 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 512, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha----------------------------------------------------------
+b,s,h 4 512 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 512, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha----------------------------------------------------------
+b,s,h 4 512 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 512, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha----------------------------------------------------------
+b,s,h 4 512 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 512, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha----------------------------------------------------------
+b,s,h 4 512 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 512, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha----------------------------------------------------------
+b,s,h 4 512 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 512, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha----------------------------------------------------------
+b,s,h 4 512 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 512, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha----------------------------------------------------------
+b,s,h 4 512 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 512, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha----------------------------------------------------------
+b,s,h 4 512 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 512, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha----------------------------------------------------------
+b,s,h 4 512 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 512, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha----------------------------------------------------------
+b,s,h 4 512 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 512, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha----------------------------------------------------------
+b,s,h 4 512 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 512, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+layer name:  InputEmbed
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  SelfAttention
+mha_gen----------------------------------------------------------
+b,tgt_s,h 4 1 768
+head_dim 64
+scaling 0.125
+hidden torch.Size([4, 1, 768])
+layer name:  MLP
+layer name:  OutputEmbed
+Outputs:
+----------------------------------------------------------------------
+0: Paris is the capital city of France.
+I'm not sure if you're being sarcastic or not, but I'm not sure if you're being sarcastic.
+I'm not sure if
+----------------------------------------------------------------------
+3: Paris is the capital city of France.
+I'm not sure if you're being sarcastic or not, but I'm not sure if you're being sarcastic.
+I'm not sure if
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 0.3205 GB,  peak_mem: 0.5925 GB
+TorchDevice: cpu
+  cur_mem: 0.0000 GB,  peak_mem: 0.0000 GB
+model size: 0.230 GB	cache size: 0.075 GB	hidden size (p): 0.003 GB
+peak gpu mem: 0.592 GB	projected: False
+prefill latency: 0.098 s	prefill throughput: 20964.742 token/s
+decode latency: 0.540 s	decode throughput: 229.550 token/s
+total latency: 0.638 s	total throughput: 200.666 token/s

@@ -43,6 +43,10 @@ class SelfAttention:
         self.num_gpus = 1 # -------------------- for simply
         
         
+        
+       
+        
+
     def set_task(self, task):
         self.task = task
 
@@ -66,18 +70,16 @@ class SelfAttention:
             ((h, h), dtype, path + ".out_proj.weight"),
             # b_out
             ((h,), dtype, path + ".out_proj.bias"),
-            # # w_ln
-            # ((h,), dtype, path + "_layer_norm.weight"),
-            # # b_ln
-            # ((h,), dtype, path + "_layer_norm.bias"),
+            # w_ln
+            ((h,), dtype, path + "_layer_norm.weight"),
+            # b_ln
+            ((h,), dtype, path + "_layer_norm.bias"),
         ]
-        
         weights = init_weight_list(weight_specs, self.policy, self.env)
         weight_home.store(weights)
-        
 
     def load_weight(self, weight_home, weight_read_buf, k):
-        w_q, b_q, w_k, b_k, w_v, b_v, w_out, b_out = weight_home.val
+        w_q, b_q, w_k, b_k, w_v, b_v, w_out, b_out, w_ln, b_ln = weight_home.val
         if k == 0:
             dst1 = self.weight_load_dst
             dst2 = self.compute
@@ -85,7 +87,8 @@ class SelfAttention:
                 w_q.smart_copy(dst1), b_q.smart_copy(dst2),
                 w_k.smart_copy(dst1), b_k.smart_copy(dst2),
                 w_v.smart_copy(dst1), b_v.smart_copy(dst2),
-                w_out.smart_copy(dst1), b_out.smart_copy(dst2)))
+                w_out.smart_copy(dst1), b_out.smart_copy(dst2),
+                w_ln.smart_copy(dst2), b_ln.smart_copy(dst2)))
 
     def init_cache_one_gpu_batch(self, cache_home):
         if self.policy.cache_gpu_percent == 100:
@@ -196,7 +199,6 @@ class SelfAttention:
     def forward(self, hidden, cache_read_buf, weight_read_buf, attention_mask,
                 cache_write_buf, i, k):
         n_head = self.config.n_head
-        print('------------------************   number of head', n_head)
 
         donate = [False] * 14
         h, donate[0] = hidden.val, True
@@ -204,43 +206,26 @@ class SelfAttention:
         if k == self.policy.num_gpu_batches - 1:
             # Clear the weight_read_buf if it is the last gpu batch
             ((w_q, donate[2]), (b_q, donate[3]), (w_k, donate[4]), (b_k, donate[5]),
-             (w_v, donate[6]), (b_v, donate[7]), (w_out, donate[8]), (b_out, donate[9])) = weight_read_buf.pop()
+             (w_v, donate[6]), (b_v, donate[7]), (w_out, donate[8]), (b_out, donate[9]),
+             (w_ln, donate[10]), (b_ln, donate[11])) = weight_read_buf.pop()
         else:
             ((w_q, _), (b_q, _), (w_k, _), (b_k, _),
-             (w_v, _), (b_v, _), (w_out, _), (b_out, _)) = weight_read_buf.val
+             (w_v, _), (b_v, _), (w_out, _), (b_out, _),
+             (w_ln, _), (b_ln, _)) = weight_read_buf.val
 
         if i == 0:  # prefill
-            print('self attention prefill--------')
-            self.prefill = True
-            
             mask, donate[1] = attention_mask.val.smart_copy(self.compute)
-            
-            h, new_k_cache, new_v_cache = self.compute.mha_cut(h, mask, w_q, b_q,
-                w_k, b_k, w_v, b_v, w_out, b_out,  n_head, donate,
+            h, new_k_cache, new_v_cache = self.compute.mha(h, mask, w_q, b_q,
+                w_k, b_k, w_v, b_v, w_out, b_out, w_ln, b_ln, n_head, donate,
                 self.policy.compress_cache, self.policy.comp_cache_config)
-            
-            
             cache_write_buf.store((new_k_cache, new_v_cache))
         else:  # decoding
-            print('self attention decode =======')
-            self.prefill = False
-            
             mask, donate[1] = attention_mask.val.smart_copy(self.attention_compute)
-            
             (k_cache, donate[12]), (v_cache, donate[13]) = cache_read_buf.pop()
-            print('self.policy.comp_cache_config ', self.policy.comp_cache_config)
-            
-            # h, new_k_cache, new_v_cache = self.compute.mha_gen(h, mask, w_q,
-            #     b_q, w_k, b_k, w_v, b_v, w_out, b_out, w_ln, b_ln, n_head,
-            #     k_cache, v_cache, donate, self.policy.attn_sparsity,
-            #     self.policy.compress_cache, self.policy.comp_cache_config)
-            
-            h, new_k_cache, new_v_cache = self.compute.mha_gen_cut(h, mask, w_q,
-                b_q, w_k, b_k, w_v, b_v, w_out, b_out, n_head,
+            h, new_k_cache, new_v_cache = self.compute.mha_gen(h, mask, w_q,
+                b_q, w_k, b_k, w_v, b_v, w_out, b_out, w_ln, b_ln, n_head,
                 k_cache, v_cache, donate, self.policy.attn_sparsity,
                 self.policy.compress_cache, self.policy.comp_cache_config)
-            
             cache_write_buf.store((new_k_cache, new_v_cache))
 
         hidden.val = h
-

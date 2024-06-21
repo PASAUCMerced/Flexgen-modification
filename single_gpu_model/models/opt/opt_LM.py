@@ -42,13 +42,14 @@ class OptLM:
         layers.append(InputEmbed(self.config, self.env, self.policy))
         for i in range(self.config.num_hidden_layers):
             if policy.sep_layer:
-                # layers.append(Layer_norm(self.config, self.env, self.policy, i))
+                layers.append(Layer_norm(self.config, self.env, self.policy, i))
                 layers.append(SelfAttention(self.config, self.env, self.policy, i))
                 layers.append(MLP(self.config, self.env, self.policy, i))
             else:
                 layers.append(TransformerLayer(self.config, self.env, self.policy, i))
         layers.append(OutputEmbed(self.config, self.env, self.policy))
         self.layers = layers
+        self.layernorm_input = ValueHolder
         self.num_layers = len(layers)
 
         if self.policy.act_gpu_percent == 100:
@@ -236,9 +237,25 @@ class OptLM:
         # Clear the cache_read_buf
         # Run layer computation
         print('layer name: ', self.layers[j].name)
-        self.layers[j].forward(self.hidden[i][j][k], self.cache_read_buf[j][k],
-            self.weight_read_buf[j], self.attention_mask[k],
-            self.cache_write_buf[j][k], i, k)
+        # print('j', j)
+        # print('self.hidden[i][j][k].val.data', self.hidden[i][j][k].val.data)
+        if self.layers[j].name == "SelfAttention": ### todo
+            # print('self.layernorm_input.val.data', self.layernorm_input.val.data)
+            self.layers[j].forward(self.layernorm_input, self.hidden[i][j][k], self.cache_read_buf[j][k],
+                self.weight_read_buf[j], self.attention_mask[k],
+                self.cache_write_buf[j][k], i, k)
+        elif self.layers[j].name == "layer_norm":
+            import copy
+            self.layernorm_input.val = copy.deepcopy(self.hidden[i][j][k].val)
+            # print('self.layernorm_input.val', self.layernorm_input.val)
+            self.layers[j].forward(self.hidden[i][j][k], self.cache_read_buf[j][k],
+                self.weight_read_buf[j], self.attention_mask[k],
+                self.cache_write_buf[j][k], i, k)
+        else:
+            self.layers[j].forward(self.hidden[i][j][k], self.cache_read_buf[j][k],
+                self.weight_read_buf[j], self.attention_mask[k],
+                self.cache_write_buf[j][k], i, k)
+        
 
     def sync(self):
         self.env.disk.synchronize()
@@ -326,17 +343,22 @@ class OptLM:
                 self.init_cache(j, k)
         if self.policy.cpu_cache_compute:
             self.env.cpu.init_attention_compute_workspace(self.config, self.task, self.policy)
-
+        
         # Generate
         if debug_mode is None:
+            print('debug_mode ', debug_mode) # None
             if not overlap:
+                print('overlap ', overlap) # True
                 # No overlap, easy to understand, suitable for debugging
                 self.generation_loop_normal()
             else:
+                print('overlap ', overlap) # True
+                print('num_gpu_batches ', num_gpu_batches) # 4
                 # Overlap I/O and compute
                 if num_gpu_batches == 1:
                     self.generation_loop_overlap_single_batch()
                 else:
+                    print('num_gpu_batches ', num_gpu_batches) # 4
                     self.generation_loop_overlap_multi_batch()
         elif debug_mode == "fewer_batch":
             # Run fewer layeres and batches for debugging
@@ -371,6 +393,7 @@ class OptLM:
                 for k in range(self.num_gpu_batches):
                     self.load_cache(i, j, k, overlap=False)
                     self.load_hidden(i, j, k)
+                    print('i,j,k', i, j, k)
                     self.compute_layer(i, j, k)
                     self.store_hidden(i, j, k)
                     self.store_cache(i, j, k, overlap=False)
@@ -464,6 +487,7 @@ class OptLM:
             self.load_weight(0, 0, k)
         self.sync()
 
+        
         # Generate
         for i in range(self.execute_gen_len):
             timers("generate").start()
@@ -472,6 +496,7 @@ class OptLM:
                 self.load_weight(i, j+1, 0)
                 self.load_cache(i, j+1, 0)
                 self.load_hidden(i, j, 0)
+                print('i,j,k', i, j, k)
                 self.compute_layer(i, j, 0)
                 self.store_cache(i, j-1, 0)
                 self.store_hidden(i, j, 0)
@@ -499,6 +524,7 @@ class OptLM:
                     self.load_cache(i, j, k+1)
                     self.store_hidden(i, j, k-1)
                     self.load_hidden(i, j, k+1)
+                    print('i,j,k', i, j, k)
                     self.compute_layer(i, j, k)
                     self.store_cache(i, j, k-1)
                     self.sync()

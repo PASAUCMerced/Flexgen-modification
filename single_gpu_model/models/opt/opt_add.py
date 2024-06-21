@@ -5,9 +5,9 @@ from flexgen_utils import init_weight_list
 
 #### not finished the modification yet
 
-class Layer_norm:
+class Add:
     def __init__(self, config, env, policy, layer_id):
-        self.name = 'layer_norm' ####
+        self.name = 'add' ####
         self.prefill = None   ####
         self.decode = False   ####
         self.config = config
@@ -22,28 +22,12 @@ class Layer_norm:
 
     # load weights from files downloaded from pretrained model(Meta)
     def init_weight(self, weight_home, path):
-        v, h, s, dtype = (self.config.vocab_size, self.config.input_dim,
-            self.config.max_seq_len, self.config.dtype)
-        # path = os.path.join(path, "")
-        path = os.path.join(os.path.join(path, f"decoder.layers.{self.layer_id}.self_attn"))
-        weight_specs = [
-            # w_ln
-            ((h,), dtype, path + "_layer_norm.weight"),
-            # b_ln
-            ((h,), dtype, path + "_layer_norm.bias"),
-        ]
-        weights = init_weight_list(weight_specs, self.policy, self.env)
-        weight_home.store(weights)
+        pass
 
 
     # load weights and bias from disk or cpu 
     def load_weight(self, weight_home, weight_read_buf, k):
-        w_ln, b_ln = weight_home.val
-        if k == 0:
-            # dst1 = self.weight_load_dst
-            dst2 = self.compute
-            weight_read_buf.store((
-                w_ln.smart_copy(dst2), b_ln.smart_copy(dst2)))
+        pass
 
     def init_cache_one_gpu_batch(self, cache_home):
         pass  # do nothing
