@@ -236,18 +236,14 @@ class OptLM:
         # Clear the weight_read_buf if it is the last gpu batch
         # Clear the cache_read_buf
         # Run layer computation
-        print('layer name: ', self.layers[j].name)
-        # print('j', j)
-        # print('self.hidden[i][j][k].val.data', self.hidden[i][j][k].val.data)
-        if self.layers[j].name == "SelfAttention": ### todo
-            # print('self.layernorm_input.val.data', self.layernorm_input.val.data)
+
+        if self.layers[j].name == "SelfAttention": 
             self.layers[j].forward(self.layernorm_input, self.hidden[i][j][k], self.cache_read_buf[j][k],
                 self.weight_read_buf[j], self.attention_mask[k],
                 self.cache_write_buf[j][k], i, k)
         elif self.layers[j].name == "layer_norm":
             import copy
             self.layernorm_input.val = copy.deepcopy(self.hidden[i][j][k].val)
-            # print('self.layernorm_input.val', self.layernorm_input.val)
             self.layers[j].forward(self.hidden[i][j][k], self.cache_read_buf[j][k],
                 self.weight_read_buf[j], self.attention_mask[k],
                 self.cache_write_buf[j][k], i, k)
@@ -496,7 +492,6 @@ class OptLM:
                 self.load_weight(i, j+1, 0)
                 self.load_cache(i, j+1, 0)
                 self.load_hidden(i, j, 0)
-                print('i,j,k', i, j, k)
                 self.compute_layer(i, j, 0)
                 self.store_cache(i, j-1, 0)
                 self.store_hidden(i, j, 0)

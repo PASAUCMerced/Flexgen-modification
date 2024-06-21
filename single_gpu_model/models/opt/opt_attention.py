@@ -11,7 +11,7 @@ import torch.nn.functional as F
 import sys
 sys.path.insert(0,'../')
 sys.path.insert(0,'/home/cc/my_flexgen/single_gpu_model')
-# from my_utils import get_world_size_and_world_rank
+
 # sys.path.insert(0,'/home/cc/FlexGen/new_flexgen/flexgen_offload')
 from flexgen_utils import torch_dtype_to_np_dtype, init_weight_list 
 from pytorch_backend import TorchTensor,TorchDevice, TorchDisk, TorchLink,TorchMixedDevice, DeviceType, general_copy, fix_recursive_import

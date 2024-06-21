@@ -391,6 +391,7 @@ class TorchDevice:
 
     # def mha(self, inputs, attention_mask, w_q, b_q, w_k, b_k, w_v, b_v,
     #         w_out, b_out, w_ln, b_ln, n_head, donate, compress_cache, comp_config):
+    
     def mha_wo_layernorm(self, pre_inputs, inputs, attention_mask, w_q, b_q, w_k, b_k, w_v, b_v,
             w_out, b_out,  n_head, donate, compress_cache, comp_config):
         """Multi-head attention (prefill phase)."""
