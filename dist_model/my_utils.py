@@ -20,8 +20,8 @@ import math
 import torch
 import sys
 sys.path.insert(0,'..')
-sys.path.insert(0,'../mpu/')
-sys.path.insert(0,'/home/cc/my_flexgen/mpu')
+sys.path.insert(0,'../core/mpu/')
+sys.path.insert(0,'/home/cc/my_flexgen/core/mpu')
 from global_vars import get_args
 import torch.distributed as dist
 

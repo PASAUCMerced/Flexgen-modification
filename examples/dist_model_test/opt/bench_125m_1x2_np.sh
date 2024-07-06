@@ -9,7 +9,7 @@ N_CORES_PER_GPU=6
 # PYTHON_EXEC=python
 # PYTHON_SCRIPT=flexgen.dist_flex_opt
 
-# pgrep -fl python | awk '!/opt_125mb\.py/{print $1}' | xargs sudo kill
+pgrep -fl python | awk '!/dist_opt_125mb\.py/{print $1}' | xargs sudo kill
 
 set -x
 
@@ -17,7 +17,7 @@ mpirun \
   --mca btl sm,self\
   --map-by ppr:$N_GPUS:node:pe=$N_CORES_PER_GPU \
   --bind-to core -x OMP_NUM_THREADS=$N_CORES_PER_GPU \
-  /home/cc/LLM/bin/python3.9 opt_125mb.py \
+  /home/cc/LLM/bin/python3.9 dist_opt_125mb.py \
     --head-ip $MY_IPADDR \
     --port 7777 \
     --use-mpi \

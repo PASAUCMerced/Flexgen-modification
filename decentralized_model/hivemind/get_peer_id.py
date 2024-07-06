@@ -3,11 +3,13 @@ import hivemind
 # Start a DHT node
 dht = hivemind.DHT(
     host_maddrs=["/ip4/0.0.0.0/tcp/0", "/ip4/0.0.0.0/udp/0/quic"],
-    start=True
+    start=True,
+    use_ipfs=True,
 )
 
 # Print the peer ID
 print(f"Peer ID: {dht.peer_id}")
+# print(dht.get_visible_maddrs())
 print('\n'.join(str(addr) for addr in dht.get_visible_maddrs()))
 print("Global IP:", hivemind.utils.networking.choose_ip_address(dht.get_visible_maddrs()))
 

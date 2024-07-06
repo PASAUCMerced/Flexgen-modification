@@ -1,25 +1,19 @@
-# from flexgen.pytorch_backend import (TorchDevice, TorchDisk, TorchLink,
-#     TorchMixedDevice, DeviceType, general_copy, fix_recursive_import)
+import sys
+sys.path.insert(0,'/home/cc/my_flexgen/dist_model/')
+from pytorch_backend import (TorchDevice, TorchDisk, TorchLink,
+    TorchMixedDevice, DeviceType, general_copy, fix_recursive_import)
 # import dataclasses
 import os
 import torch
 import torch.nn as nn
 import numpy as np
-import sys
+
 
 import torch.nn.functional as F
 sys.path.insert(0,'../flexgen_offload/')
-sys.path.insert(0,'/home/cc/my_flexgen/flexgen_offload/')
-from flexgen_utils import init_weight_list_tensor_parallel
-from my_utils import get_world_size_and_world_rank
-# sys.path.insert(0,'/home/cc/FlexGen/new_flexgen/flexgen_offload')
-from device_type import DeviceType
-from torch_tensor import TorchTensor, general_copy
-from recursive_import import fix_recursive_import
-from torch_disk import TorchDisk
-from torch_link import TorchLink
-from torch_device import TorchDevice
-from torch_mixed_device import TorchMixedDevice
+sys.path.insert(0,'/home/cc/my_flexgen/dist_model/')
+# from flexgen_utils import init_weight_list_tensor_parallel
+from flexgen_utils import init_weight_list
 
 DUMMY_WEIGHT = "_DUMMY_"  # Use dummy weights for benchmark purposes
 sys.path.insert(0,'/home/cc/my_flexgen/utils')
@@ -92,7 +86,8 @@ class SelfAttention:
         #     print('> testing initialize_model_parallel with size {} ...'.format(20))
         # if torch.distributed.get_rank() == 1:
         #     print('> testing initialize_model_parallel with size {} ...'.format(40))
-        weights = init_weight_list_tensor_parallel(weight_specs, self.policy, self.env)
+        # weights = init_weight_list_tensor_parallel(weight_specs, self.policy, self.env)
+        weights = init_weight_list(weight_specs, self.policy, self.env)
         # import sys
         # size_in_bytes = sys.getsizeof(weight_home)
         # print(f"Size of self.weight_home: {size_in_bytes} bytes")
@@ -250,7 +245,7 @@ class SelfAttention:
             print('self.compute ', self.compute) # cuda
             
             
-            h, new_k_cache, new_v_cache = self.compute.mha_TP(h, mask, w_q, b_q,
+            h, new_k_cache, new_v_cache = self.compute.mha_wo_layernorm_TP(h, mask, w_q, b_q,
                 w_k, b_k, w_v, b_v, w_out, b_out, n_head, donate,
                 self.policy.compress_cache, self.policy.comp_cache_config)
             
@@ -269,7 +264,7 @@ class SelfAttention:
             #     k_cache, v_cache, donate, self.policy.attn_sparsity,
             #     self.policy.compress_cache, self.policy.comp_cache_config)
             
-            h, new_k_cache, new_v_cache = self.compute.mha_gen_TP(h, mask, w_q,
+            h, new_k_cache, new_v_cache = self.compute.mha_gen_wo_layernorm_TP(h, mask, w_q,
                 b_q, w_k, b_k, w_v, b_v, w_out, b_out, n_head,
                 k_cache, v_cache, donate, self.policy.attn_sparsity,
                 self.policy.compress_cache, self.policy.comp_cache_config)
@@ -278,149 +273,3 @@ class SelfAttention:
 
         hidden.val = h
 
-
-#     def mha_gen_TP(self, inputs, attention_mask, w_q, b_q, w_k, b_k, w_v, b_v,
-#                     w_out, b_out, n_head, k_cache, v_cache, donate,
-#                     attn_sparsity, compress_cache, comp_config, tensor_parallel_size, split_idx):
-#             """Multi-head attention (decoding phase)."""
-#             print('mha_gen decode----------------')
-            
-#             # decompress weights
-#             if w_q.device.device_type == DeviceType.COMPRESSED:
-#                 w_q = w_q.device.decompress(w_q)
-#                 w_k = w_k.device.decompress(w_k)
-#                 w_v = w_v.device.decompress(w_v)
-#                 w_out = w_out.device.decompress(w_out)
-
-#             b, tgt_s, h = inputs.shape
-#             print('b, tgt_s, h' + str(b)+' ,' + str(tgt_s) + ', ' +str(h))
-#             src_s = attention_mask.shape[1]
-#             head_dim = h // n_head
-            
-#             scaling = head_dim ** -0.5
-            
-#             heads_per_split = n_head // tensor_parallel_size
-#             q_weight_partitions = nn.ParameterList([
-#                 nn.Parameter(w_q.view(h, h // tensor_parallel_size))
-#                 for _ in range(tensor_parallel_size)
-#             ])
-#             k_weight_partitions = nn.ParameterList([
-#                 nn.Parameter(w_k.view(h, h // tensor_parallel_size))
-#                 for _ in range(tensor_parallel_size)
-#             ])
-#             v_weight_partitions = nn.ParameterList([
-#                 nn.Parameter(w_v.view(h, h // tensor_parallel_size))
-#                 for _ in range(tensor_parallel_size)
-#             ])
-#             out_weight_partitions = nn.ParameterList([
-#                 nn.Parameter(w_out.view(h, h // tensor_parallel_size))
-#                 for _ in range(tensor_parallel_size)
-#             ])
-#             q_bias_partitions = nn.ParameterList([
-#                 nn.Parameter(b_q.view(h // tensor_parallel_size))
-#                 for _ in range(tensor_parallel_size)
-#             ])
-#             k_bias_partitions = nn.ParameterList([
-#                 nn.Parameter(b_k.view(h // tensor_parallel_size))
-#                 for _ in range(tensor_parallel_size)
-#             ])
-#             v_bias_partitions = nn.ParameterList([
-#                 nn.Parameter(b_v.view(h // tensor_parallel_size))
-#                 for _ in range(tensor_parallel_size)
-#             ])
-#             out_bias_partitions = nn.ParameterList([
-#                 nn.Parameter(b_out.view(h // tensor_parallel_size))
-#                 for _ in range(tensor_parallel_size)
-#             ])
-            
-            
-#             x = inputs.data
-#             weight_q = self.weight_q_partitions[split_idx]
-#             bias_q = self.bias_q_partitions[split_idx]
-            
-#             q = torch.matmul(x, weight_q) + bias_q
-#             q = q*scaling
-
-#             weight_k = self.weight_k_partitions[split_idx]
-#             bias_k = self.bias_k_partitions[split_idx]
-            
-#             k = torch.matmul(x, weight_k) + bias_k
-
-#             weight_v = self.weight_v_partitions[split_idx]
-#             bias_v = self.bias_v_partitions[split_idx]
-        
-#             v = torch.matmul(x, weight_v) + bias_v
-            
-            
-#             # shape: (b * n_head, 1, head_dim)
-#             q = q.permute(0, 2, 1, 3).reshape(b * self.heads_per_split, tgt_s, self.head_dim)
-#             # shape: (1, b * n_head, head_dim)
-#             k_new = k.permute(1, 0, 2, 3).reshape(tgt_s, b * self.heads_per_split, self.head_dim)
-#             # shape: (1, b * n_head, head_dim)
-#             v_new = v.permute(1, 0, 2, 3).reshape(tgt_s, b * self.heads_per_split, self.head_dim)
-            
-#             k = k_cache.data[:src_s]
-#             v = v_cache.data[:src_s]
-#             k[src_s - 1:src_s] = k_new
-#             v[src_s - 1:src_s] = v_new
-#             # only update the latest item of K, V in cahce, to save time and energy
-#             # shape: (b * n_head, head_dim, s)
-#             k = k.permute(1, 2, 0).reshape(b * n_head, head_dim, src_s)
-#             # shape: (b * n_head, s, head_dim)
-#             v = v.permute(1, 0, 2).reshape(b * n_head, src_s, head_dim)
-#             if k.is_cuda:
-#                 value = self._attention_value(q, k, v, attention_mask.data,
-#                     b, src_s, tgt_s, self.heads_per_split, self.head_dim)
-#             else:
-#                 q = q.float().cpu()
-#                 k, v = k.float(), v.float()
-#                 value = self._attention_value(q, k, v, attention_mask.data,
-#                     b, src_s, tgt_s, self.heads_per_split, self.head_dim).cuda().half()
-            
-
-#             # shape: (b, 1, h)
-#             value = value.transpose(1, 2).view(b, tgt_s, h)
-#             value = F.linear(value, w_out.data, bias=b_out.data)
-
-#             value.add_(inputs.data) # Add & Norm
-
-#             if donate[0]: inputs.delete()
-#             if donate[1]: attention_mask.delete()
-
-            
-#             k_new = TorchTensor.create_from_torch(k_new, self)
-#             v_new = TorchTensor.create_from_torch(v_new, self)
-#             # see_memory_usage('---------================-------------------after mha_gen \n')
-#             # get_memory('---------================-------------------after mha_gen \n')
-#             return TorchTensor.create_from_torch(value, self), k_new, v_new
-
-#     def _attention_value(self, q, k, v, mask, b, src_s, tgt_s, n_head, head_dim):
-        
-#         # shape: (b * n_head, 1, s)
-#         attn_weights = torch.bmm(q, k)
-#         # shape: (b, 1, 1, s)
-#         mask = mask.view(b, 1, 1, src_s)
-#         # shape: (b * n_head, 1, s)
-#         attn_weights = attn_weights.view(b, n_head, 1, src_s)
-#         attn_weights = torch.where(mask, attn_weights, -1e4)
-#         attn_weights = attn_weights.view(b * n_head, 1, src_s)
-#         attn_weights = F.softmax(attn_weights, dim=2)
-        
-#         # shape: (b, n_head, 1, head_dim)
-#         return torch.bmm(attn_weights, v).view(b, n_head, tgt_s, head_dim)
-    
-
-# # class CoreAttention(MegatronModule):
-
-# #     def __init__(self):
-# #         super(CoreAttention, self).__init__()
-# #         projection_size = args.kv_channels * args.num_attention_heads
-# #         self.hidden_size_per_partition = core.utils.divide(projection_size,
-# #                                                            world_size)
-# #         self.hidden_size_per_attention_head = core.utils.divide(
-# #             projection_size, args.num_attention_heads)
-# #         self.num_attention_heads_per_partition = core.utils.divide(
-# #             args.num_attention_heads, world_size)
-        
-#         # self.scale_softmax = ScaledSoftmax.apply(input, scale)
-        

@@ -30,7 +30,7 @@ def find_free_port():
     return port
 
 
-def initialize_distributed(head_ip, port, world_size, rank, local_rank,
+def initialize_distributed1(head_ip, port, world_size, rank, local_rank,
                            comm_device):
     print(f'Initializing distributed environment at {head_ip}:{port}, '
           f'world_size={world_size}, rank={rank}, local_rank={local_rank}.')
@@ -95,8 +95,8 @@ def get_world_size():
 def initialize_distributed_TP(head_ip, port, world_size, rank, local_rank,
                            comm_device):
     
-    # free_port = find_free_port()
-    # print('free port ', free_port)
+    free_port = find_free_port()
+    print('free port ', free_port)
     # Arguments:
     #    model_parallel_size: number of GPUs used to parallelize model.
     print(f'Initializing distributed environment '
@@ -157,70 +157,70 @@ def get_tensor_parallel_group():
     return _TENSOR_MODEL_PARALLEL_GROUP
 
 
-# def initialize_distributed(args):
-#     # head_ip, port, world_size, rank, local_rank,comm_device
-#     """Initialize torch.distributed."""
-#     # Get local rank in case it is provided.
-#     device_count = torch.cuda.device_count()
-#     # print('device_count ', device_count)
+def initialize_distributed(args):
+    # head_ip, port, world_size, rank, local_rank,comm_device
+    """Initialize torch.distributed."""
+    # Get local rank in case it is provided.
+    device_count = torch.cuda.device_count()
+    # print('device_count ', device_count)
     
-#     global _COMM_DEVICE
-#     comm_device =args.comm_device
-#     _COMM_DEVICE = args.comm_device
-#     if comm_device == 'cpu':
-#         backend = 'gloo'
-#     elif comm_device == 'gpu':
-#         backend = 'nccl'
-#     else:
-#         raise ValueError(f'Unknown comm_device: {comm_device}')
-#     local_rank = args.local_rank
+    global _COMM_DEVICE
+    comm_device =args.comm_device
+    _COMM_DEVICE = args.comm_device
+    if comm_device == 'cpu':
+        backend = 'gloo'
+    elif comm_device == 'gpu':
+        backend = 'nccl'
+    else:
+        raise ValueError(f'Unknown comm_device: {comm_device}')
+    local_rank = args.local_rank
 
-#     # Get rank and world size.
-#     # rank = int(os.getenv('RANK', '0'))
-#     rank = args.rank
-#     # world_size = int(os.getenv("WORLD_SIZE", '1'))
-#     world_size = args.world_size
-#     print('> initializing torch.distributed with local rank: {}, '
-#           'rank: {}, world size: {}'.format(local_rank, rank, world_size))
+    # Get rank and world size.
+    # rank = int(os.getenv('RANK', '0'))
+    rank = args.rank
+    # world_size = int(os.getenv("WORLD_SIZE", '1'))
+    world_size = args.world_size
+    print('> initializing torch.distributed with local rank: {}, '
+          'rank: {}, world size: {}'.format(local_rank, rank, world_size))
 
-#     # Set the device id.
-#     device = rank % torch.cuda.device_count()
-#     # print('----device ', device)
-#     if local_rank is not None:
-#         device = local_rank
-#     torch.cuda.set_device(device)
+    # Set the device id.
+    device = rank % torch.cuda.device_count()
+    # print('----device ', device)
+    if local_rank is not None:
+        device = local_rank
+    torch.cuda.set_device(device)
 
-#     # Call the init process.
-#     init_method = 'tcp://'
-#     master_ip = os.getenv('MASTER_ADDR', 'localhost')
-#     master_port = os.getenv('MASTER_PORT', '29500')
-#     init_method += master_ip + ':' + master_port
-#     torch.distributed.init_process_group(
-#         backend=backend,
-#         world_size=world_size,
-#         rank=rank,
-#         init_method=init_method)
+    # Call the init process.
+    init_method = 'tcp://'
+    master_ip = os.getenv('MASTER_ADDR', 'localhost')
+    master_port = os.getenv('MASTER_PORT', '29500')
+    init_method += master_ip + ':' + master_port
+    torch.distributed.init_process_group(
+        backend=backend,
+        world_size=world_size,
+        rank=rank,
+        init_method=init_method)
     
-#     if torch.distributed.is_initialized():
-#         print('dist init successfully')
-#     else:
-#         print('Error: dist is not initialized()')
+    if torch.distributed.is_initialized():
+        print('dist init successfully')
+    else:
+        print('Error: dist is not initialized()')
         
-#     tensor_model_parallel_size = world_size
-#     num_tensor_model_parallel_groups = world_size // tensor_model_parallel_size
-#     # Build the tensor model-parallel groups.
-#     global _TENSOR_MODEL_PARALLEL_GROUP
-#     assert (
-#         _TENSOR_MODEL_PARALLEL_GROUP is None
-#     ), 'tensor model parallel group is already initialized'
-#     for i in range(num_tensor_model_parallel_groups):
-#         ranks = range(i * tensor_model_parallel_size, (i + 1) * tensor_model_parallel_size)
-#         group = torch.distributed.new_group(ranks)
-#         if rank in ranks:
-#             _TENSOR_MODEL_PARALLEL_GROUP = group
+    tensor_model_parallel_size = world_size
+    num_tensor_model_parallel_groups = world_size // tensor_model_parallel_size
+    # Build the tensor model-parallel groups.
+    global _TENSOR_MODEL_PARALLEL_GROUP
+    assert (
+        _TENSOR_MODEL_PARALLEL_GROUP is None
+    ), 'tensor model parallel group is already initialized'
+    for i in range(num_tensor_model_parallel_groups):
+        ranks = range(i * tensor_model_parallel_size, (i + 1) * tensor_model_parallel_size)
+        group = torch.distributed.new_group(ranks)
+        if rank in ranks:
+            _TENSOR_MODEL_PARALLEL_GROUP = group
             
-#     suppress_output(rank)
-#     print("Finished initializing -* tensor parallel *- distributed environment")
+    suppress_output(rank)
+    print("Finished initializing -* tensor parallel *- distributed environment")
     
             
 

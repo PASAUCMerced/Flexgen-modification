@@ -13,4 +13,4 @@ class Task:
     do_sample: bool
     temperature: float
     stop: Optional[int]
-    top_p: Optional[int]
+    top_p: Optional[int] # top_p is not used in opt model

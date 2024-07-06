@@ -1,50 +1,56 @@
-
-
 import hivemind
+import asyncio
 import logging
 
-# # 设置日志级别为DEBUG
-# logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.INFO)
 
-# # 创建初始对等点A，使用不同的端口
-# dht_A = hivemind.DHT(
-#     host_maddrs=["/ip4/0.0.0.0/tcp/50475", "/ip4/0.0.0.0/udp/58446/quic"],
-#     start=True
-# )
+async def run_node(is_initial_node, ip_address, initial_peer=None):
+    host_maddrs = [f"/ip4/{ip_address}/tcp/0", f"/ip4/0.0.0.0/tcp/0"]
+    
+    if is_initial_node:
+        # Node A: Initial node
+        dht = await hivemind.DHT.create(
+            host_maddrs=host_maddrs,
+            start=True
+        )
+        print("Node A started")
+    else:
+        # Node B: Connecting to Node A
+        dht = await hivemind.DHT.create(
+            host_maddrs=host_maddrs,
+            initial_peers=[initial_peer] if initial_peer else None,
+            start=True
+        )
+        print("Node B started and attempting to connect to Node A")
 
-# # 打印初始对等点A的可见地址
-# print("对等点A的地址:")
-# print('\n'.join(str(addr) for addr in dht_A.get_visible_maddrs()))
-# print("公共IP地址:", hivemind.utils.networking.choose_ip_address(dht_A.get_visible_maddrs()))
+    visible_maddrs = dht.get_visible_maddrs()
+    print("Node address:", visible_maddrs)
+    return dht, visible_maddrs
 
-# import hivemind
-# import logging
+async def main(is_initial_node, ip_address, initial_peer=None):
+    try:
+        dht, visible_maddrs = await run_node(is_initial_node, ip_address, initial_peer)
+        
+        if is_initial_node:
+            print("For Node B, use one of these addresses:")
+            for addr in visible_maddrs:
+                if not addr.startswith("/ip4/127.0.0.1") and not addr.startswith("/ip4/192.168."):
+                    print(addr)
+        
+        while True:
+            await asyncio.sleep(1)
+    except KeyboardInterrupt:
+        print("Shutting down node...")
+    finally:
+        if 'dht' in locals():
+            await dht.shutdown()
 
-# # 设置日志级别为DEBUG
-# logging.basicConfig(level=logging.DEBUG)
-#         host_maddrs=["/ip4/0.0.0.0/tcp/40375", "/ip4/0.0.0.0/udp/48446/quic"],
-initial_peers=[
-   # IPv4 DNS addresses
-   "chi-dyn-129-114-108-6.tacc.chameleoncloud.org",
-   "chi-dyn-129-114-109-60.tacc.chameleoncloud.org",
-   # Reserved IPs
-   "/ip4/129.114.108.6/",
-   "/ip4/129.114.109.60/"
-]
+if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser(description="Run a Hivemind DHT node")
+    parser.add_argument("--initial", action="store_true", help="Run as the initial node")
+    parser.add_argument("--ip", required=True, help="IP address of this node")
+    parser.add_argument("--peer", help="Address of the initial peer (for non-initial nodes)")
+    args = parser.parse_args()
 
-try:
-#     # 创建初始对等点B
-    dht_B = hivemind.DHT(
-        host_maddrs=["/ip4/0.0.0.0/tcp/40375", "/ip4/0.0.0.0/udp/48446/quic"],
-        initial_peers=initial_peers,
-        start=True
-    )
-
-#     # 打印初始对等点A的可见地址
-    print("对等点B的地址:")
-    print('\n'.join(str(addr) for addr in dht_B.get_visible_maddrs()))
-#     print("公共IP地址:", hivemind.utils.networking.choose_ip_address(dht_B.get_visible_maddrs()))
-except Exception as e:
-    logging.error(f"Error starting DHT: {e}")
-
-
+    asyncio.run(main(is_initial_node=args.initial, ip_address=args.ip, initial_peer=args.peer))

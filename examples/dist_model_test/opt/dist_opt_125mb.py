@@ -16,38 +16,33 @@ import torch
 from transformers import AutoTokenizer
 import sys
 sys.path.insert(0,'..')
-sys.path.insert(0,'../../flexgen_offload/')
-sys.path.insert(0,'/home/cc/my_flexgen/flexgen_offload')
-sys.path.insert(0,'../../../dist_model/')
+# sys.path.insert(0,'../../core/flexgen_offload/')
+# sys.path.insert(0,'/home/cc/my_flexgen/core/flexgen_offload')
 sys.path.insert(0,'/home/cc/my_flexgen/dist_model')
 
 from dist_utils import initialize_distributed, get_tensor_model_parallel_group
+from dist_utils import initialize_distributed_TP
 
 from compression import CompressionConfig
-from opt_config import OptConfig, get_opt_config, download_opt_weights
-from device_type import DeviceType
-from torch_tensor import TorchTensor, general_copy
-from recursive_import import fix_recursive_import
-from torch_disk import TorchDisk
-from torch_link import TorchLink
-from torch_device import TorchDevice
-from torch_mixed_device import TorchMixedDevice
+from dist_utils import initialize_distributed
+from policy import Policy
+
+from pytorch_backend import (TorchDevice, TorchDisk, TorchLink,
+    TorchMixedDevice, TorchTensor, fix_recursive_import)
+
+from flexgen_utils import (Task, ExecutionEnv, GB, T, ValueHolder,
+    array_1d, array_2d, array_3d, array_4d, str2bool, project_decode_latency)
+
+sys.path.insert(0,'/home/cc/my_flexgen/dist_model/tensor_parallel/opt')
+from dist_optLM_model_tensor_parallel import OptLM_TP
+
 sys.path.insert(0,'/home/cc/my_flexgen/utils')   
 from timers import timers
 
-from data_types import GB, str2bool
-from task  import Task
-from flexgen_utils import (ExecutionEnv, ValueHolder, project_decode_latency, write_benchmark_log,read_benchmark_log)
-# sys.path.insert(0,'../model')
-sys.path.insert(0,'/home/cc/my_flexgen/dist_model')
-
-
-from policy import Policy
-from dist_optLM_model_tensor_parallel import OptLM_TP
-fix_recursive_import()
+from opt_config import get_opt_config
 
 import torch.distributed as dist
-
+fix_recursive_import()
 DUMMY_WEIGHT = "_DUMMY_"  # Use dummy weights for benchmark purposes
 
 
@@ -90,7 +85,8 @@ def run_flexgen(args):
     # Task and policy
     warmup_inputs = get_test_inputs(32, num_prompts, tokenizer)
     inputs = get_test_inputs(prompt_len, num_prompts, tokenizer)
-
+    print('prompt_len, gen_len, cut_gen_len ', prompt_len, gen_len, cut_gen_len)
+    
     gpu = TorchDevice("cuda:0")
     cpu = TorchDevice("cpu")
     disk = TorchDisk(args.offload_dir)
