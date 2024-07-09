@@ -1,20 +1,22 @@
 import hivemind
 from time import sleep
 
+INITIAL_PEERS=["/ip4/127.0.0.1/tcp/37857/p2p/12D3KooWQtkEzJU3VosFutKLVHcXwSo45XhgiMbZjME8pKDjS3Fr",]
 # Start a DHT node
 dht = hivemind.DHT(
     host_maddrs=["/ip4/0.0.0.0/tcp/0", "/ip4/0.0.0.0/udp/0/quic"],
-    initial_peers=["/ip4/169.236.181.122/tcp/42611/p2p/12D3KooWEkzcHVvgUepaekSMqK6Sfsk5GnqDip4CYVS1uKG8qmMN"],
+    initial_peers=INITIAL_PEERS,
     start=True,
+    # use_ipfs=True,
 )
+
 # Print the peer ID
 print(f"Peer ID: {dht.peer_id}")
-
+# print(dht.get_visible_maddrs())
 print('\n'.join(str(addr) for addr in dht.get_visible_maddrs()))
 print("Global IP:", hivemind.utils.networking.choose_ip_address(dht.get_visible_maddrs()))
 
-sleep(600)
-
+sleep(60)
 # sleep(6000)
 
 
