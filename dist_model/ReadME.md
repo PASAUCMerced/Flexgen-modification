@@ -8,4 +8,4 @@ the tensor parallellism realted functions:
  	the weight splitting has not add to this function yet.  
 
     
-  the function `mha_gen`, with previous weight split is in `mha_gen_TP.py`  
+  the function `mha_gen`, with previous weight split is in `torch_device.py`  
